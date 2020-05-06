@@ -15,6 +15,7 @@
     padding: 30px 30px 60px;
     background: url(../../../assets/img/covid.png)no-repeat center center;
     background-size: cover;
+    height: calc(100vh - 200px);
 }
 
 .case_box {
@@ -66,4 +67,44 @@ h3.time {
 h3.time span {
     font-weight: 500;
     margin-right: 10px;
+}
+
+
+// -------------------media--------------
+
+@media(max-width:1199px) {
+    .case_box h2 {
+        font-size: 44px;
+    }
+}
+
+@media(max-width:991px) {
+    .case_box h2 {
+        font-size: 36px;
+        margin: 0;
+    }
+
+    .case_box h4 {
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:767px) {
+    .mat-card {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .case_box {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .col-md-6.text-right {
+        text-align: left!important;
+    }
+
+    .heading_box {
+        margin-bottom: 30px;
+    }
 }
